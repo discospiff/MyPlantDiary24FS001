@@ -14,7 +14,13 @@ namespace MyPlantDiary24FS001.Pages
 
         public void OnGet()
         {
-
+            string brand = "My Plant Diary";
+            string inBrand = Request.Query["Brand"];
+            if (inBrand != null && inBrand.Length > 0) 
+            {
+                brand = inBrand;
+            }
+            ViewData["Brand"] = brand;
         }
     }
 }

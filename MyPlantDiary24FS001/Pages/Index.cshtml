@@ -5,6 +5,7 @@
     ViewData["Title"] = "My Plant Diary";
     var brand = ViewData["Brand"];
     List<Specimen> specimens = (List<Specimen>) ViewData["Specimens"];
+    var weatherMessage = ViewData["WeatherMessage"];
 }
 
 <div class="text-center">
@@ -15,6 +16,7 @@
             <li>Add events to a plant (water, fertlizer, etc.)</li>
 
         </ul>
+        <strong>@weatherMessage</strong>
         <table>
             <tr>
                 <th>Plant ID</th>

@@ -1,8 +1,10 @@
 ﻿@page
+@using PlantPlacesSpecimens;
 @model IndexModel
 @{
     ViewData["Title"] = "My Plant Diary";
     var brand = ViewData["Brand"];
+    List<Specimen> specimens = (List<Specimen>) ViewData["Specimens"];
 }
 
 <div class="text-center">
@@ -13,6 +15,26 @@
             <li>Add events to a plant (water, fertlizer, etc.)</li>
 
         </ul>
-
+        <table>
+            <tr>
+                <th>Plant ID</th>
+                <th>Specimen ID</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Address</th>
+            </tr>
+            @{
+                foreach(Specimen specimen in specimens)
+                {
+                    <tr>
+                        <td>@specimen.PlantId</td>
+                        <td>@specimen.SpecimenId</td>
+                        <td>@specimen.Lat</td>
+                        <td>@specimen.Lng</td>
+                        <td>@specimen.Address</td>
+                    </tr>
+                }
+            }
+        </table>
     </p>
 </div>

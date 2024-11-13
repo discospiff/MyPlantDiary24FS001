@@ -17,6 +17,7 @@ namespace MyPlantDiary24FS001.Pages
 
         public void OnGet()
         {
+            // Grab specimen data.
             Task<HttpResponseMessage> task = _httpClient.GetAsync("https://raw.githubusercontent.com/discospiff/data/refs/heads/main/specimens.json");
             HttpResponseMessage result = task.Result;
 

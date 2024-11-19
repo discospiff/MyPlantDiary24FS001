@@ -25,20 +25,23 @@ namespace MyPlantDiary24FS001
 
         // POST api/<ValuesController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Specimen specimen)
         {
+            Console.WriteLine(specimen);
         }
 
         // PUT api/<ValuesController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] Specimen specimen)
         {
+            Console.WriteLine(specimen);
         }
 
         // DELETE api/<ValuesController>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            Console.WriteLine(id);
         }
     }
 }

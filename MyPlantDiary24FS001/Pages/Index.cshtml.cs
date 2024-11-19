@@ -48,7 +48,7 @@ namespace MyPlantDiary24FS001.Pages
                         Console.WriteLine(evt);
                     }
                 }
-
+                SpecimenRepository.allSpecimens = specimens;
                 
             }
             

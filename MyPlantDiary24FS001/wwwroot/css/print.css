@@ -1,0 +1,13 @@
+body {
+	background-color: #FFFFFF;
+	color: #000000;
+}
+#header {
+	display:none;
+}
+.noprint {
+	display:none;
+}
+.mobile {
+	display:none;
+}

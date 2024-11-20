@@ -1,0 +1,21 @@
+body {
+	background-color: #F2C849;
+	color: #8F393D;
+}
+#header {
+	position:fixed;
+	background-color: #8F393D;
+	width: 100%;
+	margin-top: 0px;
+	top:0;
+	left:0;
+	height:4em;
+	z-index:100;
+}
+.content {
+	margin-top: 5em;
+	position:relative;
+}
+.mobile {
+	display:none;
+}
